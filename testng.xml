@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utilities.ExtentListenerClass" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testcases.LoginTestCases" />
+
+			<class name="testcases.projects.CreateProjectTestCases" />
+			<class name="testcases.projects.GetProjectCardViewTestCases" />
+
+
+			<class name="testcases.projects.GetProjectPriorityTestCases" />
+			<class name="testcases.projects.GetProjectIdTestCases" />
+			<class name="testcases.projects.UpdateProjectByIdTestCases" />
+			<class name="testcases.projects.DeleteProjectByIdTestCases" />
+			<class name="testcases.projects.CreateProjectTestCases" />
+
+			<class name="testcases.projects.GetProjectBudgetTestCases" />
+			<class name="testcases.projects.UpdateProjectBudgetTestCases" />
+			<class name="testcases.projects.DeleteProjectBudgetTestCases" />
+
+			<class name="testcases.projects.CreateProjectMemberTestCases" />
+			<class name="testcases.projects.UpdateProjectManagerTestCases" />
+			<class name="testcases.projects.DeleteProjectMemberTestCases" />
+
+			<class name="testcases.projects.GetProjectManagerTestCases" />
+			<class name="testcases.projects.MultiUpdateProjectMembersTestCases" />
+			<class name="testcases.projects.GetAllProjectMemberTestCases" />
+			<class name="testcases.projects.DeleteProjectManagerTestCases" />
+
+			<class name="testcases.projects.GetProjectClientTestCases" />
+			<class name="testcases.projects.UpdateProjectClientTestCases" />
+			<class name="testcases.projects.DeleteProjectClientTestCases" />
+
+			<class name="testcases.projectboards.GetProjectBoardTestCases" />
+			<class
+				name="testcases.projectboards.GetProjectBoardByStatusTestCases" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

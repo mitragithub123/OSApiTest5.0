@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="115" passed="94" failed="21" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-04T11:55:11 IST" name="Suite" finished-at="2025-02-04T11:55:33 IST" duration-ms="22377">
+    <groups>
+    </groups>
+    <test started-at="2025-02-04T11:55:11 IST" name="Test" finished-at="2025-02-04T11:55:33 IST" duration-ms="22377">
+      <class name="testcases.projectboards.GetProjectBoardByStatusTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:32 IST" name="setupTestData" finished-at="2025-02-04T11:55:32 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectBoardByStatus()[pri:1, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:32 IST" name="verifyGetProjectBoardByStatus" finished-at="2025-02-04T11:55:33 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardByStatus -->
+        <test-method signature="verifyGetDoingTasks()[pri:2, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:33 IST" name="verifyGetDoingTasks" finished-at="2025-02-04T11:55:33 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetDoingTasks -->
+        <test-method signature="verifyGetDoneTasks()[pri:3, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:33 IST" name="verifyGetDoneTasks" finished-at="2025-02-04T11:55:33 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetDoneTasks -->
+        <test-method signature="verifyGetProjectBoardByStatusWithInvalidAccessToken()[pri:4, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:33 IST" name="verifyGetProjectBoardByStatusWithInvalidAccessToken" finished-at="2025-02-04T11:55:33 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardByStatusWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectBoardByStatusWithInvalidTenantId()[pri:5, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:33 IST" name="verifyGetProjectBoardByStatusWithInvalidTenantId" finished-at="2025-02-04T11:55:33 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardByStatusWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectBoardByStatusWithoutAccessToken()[pri:6, instance:testcases.projectboards.GetProjectBoardByStatusTestCases@642a7222]" started-at="2025-02-04T11:55:33 IST" name="verifyGetProjectBoardByStatusWithoutAccessToken" finished-at="2025-02-04T11:55:33 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardByStatusWithoutAccessToken -->
+      </class> <!-- testcases.projectboards.GetProjectBoardByStatusTestCases -->
+      <class name="testcases.projects.GetProjectClientTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetProjectClientTestCases@5be1d0a4]" started-at="2025-02-04T11:55:30 IST" name="setupTestData" finished-at="2025-02-04T11:55:31 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectClientDetails()[pri:1, instance:testcases.projects.GetProjectClientTestCases@5be1d0a4]" started-at="2025-02-04T11:55:31 IST" name="verifyGetProjectClientDetails" finished-at="2025-02-04T11:55:31 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectClientDetails -->
+        <test-method signature="verifyGetProjectClientWithInvalidProjectId()[pri:2, instance:testcases.projects.GetProjectClientTestCases@5be1d0a4]" started-at="2025-02-04T11:55:31 IST" name="verifyGetProjectClientWithInvalidProjectId" finished-at="2025-02-04T11:55:31 IST" duration-ms="62" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: 12345 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: 12345 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.GetProjectClientTestCases.verifyGetProjectClientWithInvalidProjectId(GetProjectClientTestCases.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectClientWithInvalidProjectId -->
+        <test-method signature="verifyGetProjectClientWithInvalidAccessToken()[pri:3, instance:testcases.projects.GetProjectClientTestCases@5be1d0a4]" started-at="2025-02-04T11:55:31 IST" name="verifyGetProjectClientWithInvalidAccessToken" finished-at="2025-02-04T11:55:31 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectClientWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectClientWithInvalidTenantId()[pri:4, instance:testcases.projects.GetProjectClientTestCases@5be1d0a4]" started-at="2025-02-04T11:55:31 IST" name="verifyGetProjectClientWithInvalidTenantId" finished-at="2025-02-04T11:55:31 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectClientWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectClientWithoutAccessToken()[pri:5, instance:testcases.projects.GetProjectClientTestCases@5be1d0a4]" started-at="2025-02-04T11:55:31 IST" name="verifyGetProjectClientWithoutAccessToken" finished-at="2025-02-04T11:55:31 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectClientWithoutAccessToken -->
+      </class> <!-- testcases.projects.GetProjectClientTestCases -->
+      <class name="testcases.projects.GetProjectIdTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetProjectIdTestCases@1224144a]" started-at="2025-02-04T11:55:19 IST" name="setupTestData" finished-at="2025-02-04T11:55:19 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectDetails()[pri:1, instance:testcases.projects.GetProjectIdTestCases@1224144a]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectDetails" finished-at="2025-02-04T11:55:20 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectDetails -->
+        <test-method signature="verifyGetProjectDetailsWithInvalidAccessToken()[pri:2, instance:testcases.projects.GetProjectIdTestCases@1224144a]" started-at="2025-02-04T11:55:20 IST" name="verifyGetProjectDetailsWithInvalidAccessToken" finished-at="2025-02-04T11:55:20 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectDetailsWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectDetailsWithInvalidTenantId()[pri:3, instance:testcases.projects.GetProjectIdTestCases@1224144a]" started-at="2025-02-04T11:55:20 IST" name="verifyGetProjectDetailsWithInvalidTenantId" finished-at="2025-02-04T11:55:20 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectDetailsWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectDetailsWithoutAccessToken()[pri:4, instance:testcases.projects.GetProjectIdTestCases@1224144a]" started-at="2025-02-04T11:55:20 IST" name="verifyGetProjectDetailsWithoutAccessToken" finished-at="2025-02-04T11:55:20 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectDetailsWithoutAccessToken -->
+        <test-method signature="verifyGetProjectDetailsWithInvalidProjectIds()[pri:5, instance:testcases.projects.GetProjectIdTestCases@1224144a]" started-at="2025-02-04T11:55:20 IST" name="verifyGetProjectDetailsWithInvalidProjectIds" finished-at="2025-02-04T11:55:21 IST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectDetailsWithInvalidProjectIds -->
+      </class> <!-- testcases.projects.GetProjectIdTestCases -->
+      <class name="testcases.projects.MultiUpdateProjectMembersTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.MultiUpdateProjectMembersTestCases@5e3f861]" started-at="2025-02-04T11:55:29 IST" name="setupTestData" finished-at="2025-02-04T11:55:29 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyMultiUpdateProjectMembers()[pri:1, instance:testcases.projects.MultiUpdateProjectMembersTestCases@5e3f861]" started-at="2025-02-04T11:55:29 IST" name="verifyMultiUpdateProjectMembers" finished-at="2025-02-04T11:55:29 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultiUpdateProjectMembers -->
+        <test-method signature="verifyMultiUpdateProjectMembersWithInvalidProjectId()[pri:2, instance:testcases.projects.MultiUpdateProjectMembersTestCases@5e3f861]" started-at="2025-02-04T11:55:29 IST" name="verifyMultiUpdateProjectMembersWithInvalidProjectId" finished-at="2025-02-04T11:55:29 IST" duration-ms="63" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: -20 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: -20 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.MultiUpdateProjectMembersTestCases.verifyMultiUpdateProjectMembersWithInvalidProjectId(MultiUpdateProjectMembersTestCases.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultiUpdateProjectMembersWithInvalidProjectId -->
+        <test-method signature="verifyMultiUpdateProjectMembersWithoutAccessToken()[pri:3, instance:testcases.projects.MultiUpdateProjectMembersTestCases@5e3f861]" started-at="2025-02-04T11:55:29 IST" name="verifyMultiUpdateProjectMembersWithoutAccessToken" finished-at="2025-02-04T11:55:29 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultiUpdateProjectMembersWithoutAccessToken -->
+        <test-method signature="verifyMultiUpdateProjectMembersWithInvalidTenantId()[pri:4, instance:testcases.projects.MultiUpdateProjectMembersTestCases@5e3f861]" started-at="2025-02-04T11:55:29 IST" name="verifyMultiUpdateProjectMembersWithInvalidTenantId" finished-at="2025-02-04T11:55:30 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultiUpdateProjectMembersWithInvalidTenantId -->
+      </class> <!-- testcases.projects.MultiUpdateProjectMembersTestCases -->
+      <class name="testcases.projects.DeleteProjectMemberTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:28 IST" name="setupTestData" finished-at="2025-02-04T11:55:29 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyDeleteProjectMember()[pri:1, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:29 IST" name="verifyDeleteProjectMember" finished-at="2025-02-04T11:55:29 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectMember -->
+        <test-method signature="verifyDeleteProjectMemberWithInvalidProjectId()[pri:2, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:29 IST" name="verifyDeleteProjectMemberWithInvalidProjectId" finished-at="2025-02-04T11:55:29 IST" duration-ms="49" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: 12345 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: 12345 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.DeleteProjectMemberTestCases.verifyDeleteProjectMemberWithInvalidProjectId(DeleteProjectMemberTestCases.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectMemberWithInvalidProjectId -->
+        <test-method signature="verifyDeleteProjectMemberWithInvalidMemberId()[pri:3, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:29 IST" name="verifyDeleteProjectMemberWithInvalidMemberId" finished-at="2025-02-04T11:55:29 IST" duration-ms="47" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid member ID: 99999 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid member ID: 99999 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.DeleteProjectMemberTestCases.verifyDeleteProjectMemberWithInvalidMemberId(DeleteProjectMemberTestCases.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectMemberWithInvalidMemberId -->
+        <test-method signature="verifyDeleteProjectMemberWithInvalidAccessToken()[pri:4, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:29 IST" name="verifyDeleteProjectMemberWithInvalidAccessToken" finished-at="2025-02-04T11:55:29 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectMemberWithInvalidAccessToken -->
+        <test-method signature="verifyDeleteProjectMemberWithInvalidTenantId()[pri:5, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:29 IST" name="verifyDeleteProjectMemberWithInvalidTenantId" finished-at="2025-02-04T11:55:29 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectMemberWithInvalidTenantId -->
+        <test-method signature="verifyDeleteProjectMemberWithoutAccessToken()[pri:6, instance:testcases.projects.DeleteProjectMemberTestCases@7dc3712]" started-at="2025-02-04T11:55:29 IST" name="verifyDeleteProjectMemberWithoutAccessToken" finished-at="2025-02-04T11:55:29 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectMemberWithoutAccessToken -->
+      </class> <!-- testcases.projects.DeleteProjectMemberTestCases -->
+      <class name="testcases.projects.UpdateProjectBudgetTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:23 IST" name="setupTestData" finished-at="2025-02-04T11:55:23 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyUpdateProjectBudget()[pri:1, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:23 IST" name="verifyUpdateProjectBudget" finished-at="2025-02-04T11:55:23 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudget -->
+        <test-method signature="verifyUpdateProjectBudgetWithInvalidProjectIds()[pri:2, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:23 IST" name="verifyUpdateProjectBudgetWithInvalidProjectIds" finished-at="2025-02-04T11:55:24 IST" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithInvalidProjectIds -->
+        <test-method signature="verifyUpdateProjectBudgetWithInvalidAccessToken()[pri:3, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:24 IST" name="verifyUpdateProjectBudgetWithInvalidAccessToken" finished-at="2025-02-04T11:55:25 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithInvalidAccessToken -->
+        <test-method signature="verifyUpdateProjectBudgetWithInvalidTenantId()[pri:4, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:25 IST" name="verifyUpdateProjectBudgetWithInvalidTenantId" finished-at="2025-02-04T11:55:25 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithInvalidTenantId -->
+        <test-method signature="verifyUpdateProjectBudgetWithoutAccessToken()[pri:5, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:25 IST" name="verifyUpdateProjectBudgetWithoutAccessToken" finished-at="2025-02-04T11:55:25 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithoutAccessToken -->
+        <test-method signature="verifyUpdateProjectBudgetWithNegativeAndStringValues()[pri:6, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:25 IST" name="verifyUpdateProjectBudgetWithNegativeAndStringValues" finished-at="2025-02-04T11:55:25 IST" duration-ms="107" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project should not be updated with negative values did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project should not be updated with negative values did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectBudgetTestCases.verifyUpdateProjectBudgetWithNegativeAndStringValues(UpdateProjectBudgetTestCases.java:203)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithNegativeAndStringValues -->
+        <test-method signature="verifyUpdateProjectBudgetWithInvalidToleranceValues()[pri:7, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:25 IST" name="verifyUpdateProjectBudgetWithInvalidToleranceValues" finished-at="2025-02-04T11:55:25 IST" duration-ms="106" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project should not be updated with invalid tolerance values did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project should not be updated with invalid tolerance values did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectBudgetTestCases.verifyUpdateProjectBudgetWithInvalidToleranceValues(UpdateProjectBudgetTestCases.java:232)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithInvalidToleranceValues -->
+        <test-method signature="verifyUpdateProjectBudgetWithInvalidCurrencyCode()[pri:8, instance:testcases.projects.UpdateProjectBudgetTestCases@9816741]" started-at="2025-02-04T11:55:25 IST" name="verifyUpdateProjectBudgetWithInvalidCurrencyCode" finished-at="2025-02-04T11:55:25 IST" duration-ms="92" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project should not be updated with positive number as currency code did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project should not be updated with positive number as currency code did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectBudgetTestCases.verifyUpdateProjectBudgetWithInvalidCurrencyCode(UpdateProjectBudgetTestCases.java:259)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectBudgetWithInvalidCurrencyCode -->
+      </class> <!-- testcases.projects.UpdateProjectBudgetTestCases -->
+      <class name="testcases.projects.DeleteProjectByIdTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.DeleteProjectByIdTestCases@700fb871]" started-at="2025-02-04T11:55:22 IST" name="setupTestData" finished-at="2025-02-04T11:55:22 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyDeleteProjectById()[pri:1, instance:testcases.projects.DeleteProjectByIdTestCases@700fb871]" started-at="2025-02-04T11:55:22 IST" name="verifyDeleteProjectById" finished-at="2025-02-04T11:55:22 IST" duration-ms="52" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to delete project expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to delete project expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at testcases.projects.DeleteProjectByIdTestCases.verifyDeleteProjectById(DeleteProjectByIdTestCases.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectById -->
+        <test-method signature="verifyDeleteProjectByIdWithInvalidProjectIds()[pri:2, instance:testcases.projects.DeleteProjectByIdTestCases@700fb871]" started-at="2025-02-04T11:55:22 IST" name="verifyDeleteProjectByIdWithInvalidProjectIds" finished-at="2025-02-04T11:55:23 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectByIdWithInvalidProjectIds -->
+        <test-method signature="verifyDeleteProjectByIdWithInvalidAccessToken()[pri:3, instance:testcases.projects.DeleteProjectByIdTestCases@700fb871]" started-at="2025-02-04T11:55:23 IST" name="verifyDeleteProjectByIdWithInvalidAccessToken" finished-at="2025-02-04T11:55:23 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectByIdWithInvalidAccessToken -->
+        <test-method signature="verifyDeleteProjectByIdWithInvalidTenantId()[pri:4, instance:testcases.projects.DeleteProjectByIdTestCases@700fb871]" started-at="2025-02-04T11:55:23 IST" name="verifyDeleteProjectByIdWithInvalidTenantId" finished-at="2025-02-04T11:55:23 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectByIdWithInvalidTenantId -->
+        <test-method signature="verifyDeleteProjectByIdWithoutAccessToken()[pri:5, instance:testcases.projects.DeleteProjectByIdTestCases@700fb871]" started-at="2025-02-04T11:55:23 IST" name="verifyDeleteProjectByIdWithoutAccessToken" finished-at="2025-02-04T11:55:23 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectByIdWithoutAccessToken -->
+      </class> <!-- testcases.projects.DeleteProjectByIdTestCases -->
+      <class name="testcases.projects.UpdateProjectClientTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="setupTestData" finished-at="2025-02-04T11:55:31 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyUpdateProjectClient()[pri:1, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClient" finished-at="2025-02-04T11:55:31 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClient -->
+        <test-method signature="verifyUpdateProjectClientWithInvalidProjectId()[pri:2, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithInvalidProjectId" finished-at="2025-02-04T11:55:31 IST" duration-ms="67" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: 12345 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: 12345 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectClientTestCases.verifyUpdateProjectClientWithInvalidProjectId(UpdateProjectClientTestCases.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithInvalidProjectId -->
+        <test-method signature="verifyUpdateProjectClientWithNegativeProjectId()[pri:3, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithNegativeProjectId" finished-at="2025-02-04T11:55:31 IST" duration-ms="62" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: -20 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: -20 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectClientTestCases.verifyUpdateProjectClientWithNegativeProjectId(UpdateProjectClientTestCases.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithNegativeProjectId -->
+        <test-method signature="verifyUpdateProjectClientWithInvalidProjectIdABC()[pri:4, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithInvalidProjectIdABC" finished-at="2025-02-04T11:55:31 IST" duration-ms="47" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: abc did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: abc did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectClientTestCases.verifyUpdateProjectClientWithInvalidProjectIdABC(UpdateProjectClientTestCases.java:112)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithInvalidProjectIdABC -->
+        <test-method signature="verifyUpdateProjectClientWithInvalidAccessToken()[pri:5, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithInvalidAccessToken" finished-at="2025-02-04T11:55:31 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithInvalidAccessToken -->
+        <test-method signature="verifyUpdateProjectClientWithInvalidTenantId()[pri:6, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithInvalidTenantId" finished-at="2025-02-04T11:55:31 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithInvalidTenantId -->
+        <test-method signature="verifyUpdateProjectClientWithoutAccessToken()[pri:7, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithoutAccessToken" finished-at="2025-02-04T11:55:31 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithoutAccessToken -->
+        <test-method signature="verifyUpdateProjectClientWithInvalidClientIds()[pri:8, instance:testcases.projects.UpdateProjectClientTestCases@415b0b49]" started-at="2025-02-04T11:55:31 IST" name="verifyUpdateProjectClientWithInvalidClientIds" finished-at="2025-02-04T11:55:31 IST" duration-ms="68" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid client ID: 1234 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid client ID: 1234 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.UpdateProjectClientTestCases.verifyUpdateProjectClientWithInvalidClientIds(UpdateProjectClientTestCases.java:197)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectClientWithInvalidClientIds -->
+      </class> <!-- testcases.projects.UpdateProjectClientTestCases -->
+      <class name="testcases.projects.GetAllProjectMemberTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetAllProjectMemberTestCases@2fb0623e]" started-at="2025-02-04T11:55:30 IST" name="setupTestData" finished-at="2025-02-04T11:55:30 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetAllProjectMembers()[pri:1, instance:testcases.projects.GetAllProjectMemberTestCases@2fb0623e]" started-at="2025-02-04T11:55:30 IST" name="verifyGetAllProjectMembers" finished-at="2025-02-04T11:55:30 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectMembers -->
+        <test-method signature="verifyGetAllProjectMembersWithInvalidProjectId()[pri:2, instance:testcases.projects.GetAllProjectMemberTestCases@2fb0623e]" started-at="2025-02-04T11:55:30 IST" name="verifyGetAllProjectMembersWithInvalidProjectId" finished-at="2025-02-04T11:55:30 IST" duration-ms="52" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: 12345 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: 12345 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.GetAllProjectMemberTestCases.verifyGetAllProjectMembersWithInvalidProjectId(GetAllProjectMemberTestCases.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectMembersWithInvalidProjectId -->
+        <test-method signature="verifyGetAllProjectMembersWithInvalidResourceIds()[pri:2, instance:testcases.projects.GetAllProjectMemberTestCases@2fb0623e]" started-at="2025-02-04T11:55:30 IST" name="verifyGetAllProjectMembersWithInvalidResourceIds" finished-at="2025-02-04T11:55:30 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectMembersWithInvalidResourceIds -->
+        <test-method signature="verifyGetAllProjectMembersWithInvalidAccessToken()[pri:3, instance:testcases.projects.GetAllProjectMemberTestCases@2fb0623e]" started-at="2025-02-04T11:55:30 IST" name="verifyGetAllProjectMembersWithInvalidAccessToken" finished-at="2025-02-04T11:55:30 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectMembersWithInvalidAccessToken -->
+        <test-method signature="verifyGetAllProjectMembersWithoutAccessToken()[pri:4, instance:testcases.projects.GetAllProjectMemberTestCases@2fb0623e]" started-at="2025-02-04T11:55:30 IST" name="verifyGetAllProjectMembersWithoutAccessToken" finished-at="2025-02-04T11:55:30 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllProjectMembersWithoutAccessToken -->
+      </class> <!-- testcases.projects.GetAllProjectMemberTestCases -->
+      <class name="testcases.projects.UpdateProjectByIdTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.UpdateProjectByIdTestCases@29f7cefd]" started-at="2025-02-04T11:55:21 IST" name="setupTestData" finished-at="2025-02-04T11:55:22 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyUpdateProjectById()[pri:1, instance:testcases.projects.UpdateProjectByIdTestCases@29f7cefd]" started-at="2025-02-04T11:55:22 IST" name="verifyUpdateProjectById" finished-at="2025-02-04T11:55:22 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectById -->
+        <test-method signature="verifyUpdateProjectByIdWithInvalidProjectIds()[pri:2, instance:testcases.projects.UpdateProjectByIdTestCases@29f7cefd]" started-at="2025-02-04T11:55:22 IST" name="verifyUpdateProjectByIdWithInvalidProjectIds" finished-at="2025-02-04T11:55:22 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectByIdWithInvalidProjectIds -->
+        <test-method signature="verifyUpdateProjectByIdWithInvalidAccessToken()[pri:3, instance:testcases.projects.UpdateProjectByIdTestCases@29f7cefd]" started-at="2025-02-04T11:55:22 IST" name="verifyUpdateProjectByIdWithInvalidAccessToken" finished-at="2025-02-04T11:55:22 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectByIdWithInvalidAccessToken -->
+        <test-method signature="verifyUpdateProjectByIdWithInvalidTenantId()[pri:4, instance:testcases.projects.UpdateProjectByIdTestCases@29f7cefd]" started-at="2025-02-04T11:55:22 IST" name="verifyUpdateProjectByIdWithInvalidTenantId" finished-at="2025-02-04T11:55:22 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectByIdWithInvalidTenantId -->
+        <test-method signature="verifyUpdateProjectByIdWithoutAccessToken()[pri:5, instance:testcases.projects.UpdateProjectByIdTestCases@29f7cefd]" started-at="2025-02-04T11:55:22 IST" name="verifyUpdateProjectByIdWithoutAccessToken" finished-at="2025-02-04T11:55:22 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectByIdWithoutAccessToken -->
+      </class> <!-- testcases.projects.UpdateProjectByIdTestCases -->
+      <class name="testcases.projects.DeleteProjectManagerTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.DeleteProjectManagerTestCases@49b2a47d]" started-at="2025-02-04T11:55:30 IST" name="setupTestData" finished-at="2025-02-04T11:55:30 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyDeleteProjectManager()[pri:1, instance:testcases.projects.DeleteProjectManagerTestCases@49b2a47d]" started-at="2025-02-04T11:55:30 IST" name="verifyDeleteProjectManager" finished-at="2025-02-04T11:55:30 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectManager -->
+        <test-method signature="verifyDeleteProjectManagerWithInvalidAccessToken()[pri:2, instance:testcases.projects.DeleteProjectManagerTestCases@49b2a47d]" started-at="2025-02-04T11:55:30 IST" name="verifyDeleteProjectManagerWithInvalidAccessToken" finished-at="2025-02-04T11:55:30 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectManagerWithInvalidAccessToken -->
+        <test-method signature="verifyDeleteProjectManagerWithInvalidTenantId()[pri:3, instance:testcases.projects.DeleteProjectManagerTestCases@49b2a47d]" started-at="2025-02-04T11:55:30 IST" name="verifyDeleteProjectManagerWithInvalidTenantId" finished-at="2025-02-04T11:55:30 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectManagerWithInvalidTenantId -->
+        <test-method signature="verifyDeleteProjectManagerWithoutAccessToken()[pri:4, instance:testcases.projects.DeleteProjectManagerTestCases@49b2a47d]" started-at="2025-02-04T11:55:30 IST" name="verifyDeleteProjectManagerWithoutAccessToken" finished-at="2025-02-04T11:55:30 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectManagerWithoutAccessToken -->
+        <test-method signature="verifyDeleteProjectManagerWithInvalidProjectIds()[pri:5, instance:testcases.projects.DeleteProjectManagerTestCases@49b2a47d]" started-at="2025-02-04T11:55:30 IST" name="verifyDeleteProjectManagerWithInvalidProjectIds" finished-at="2025-02-04T11:55:30 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectManagerWithInvalidProjectIds -->
+      </class> <!-- testcases.projects.DeleteProjectManagerTestCases -->
+      <class name="testcases.projects.GetProjectBudgetTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetProjectBudgetTestCases@3b35a229]" started-at="2025-02-04T11:55:23 IST" name="setupTestData" finished-at="2025-02-04T11:55:23 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectBudget()[pri:1, instance:testcases.projects.GetProjectBudgetTestCases@3b35a229]" started-at="2025-02-04T11:55:23 IST" name="verifyGetProjectBudget" finished-at="2025-02-04T11:55:23 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBudget -->
+        <test-method signature="verifyGetProjectBudgetWithInvalidProjectIds()[pri:2, instance:testcases.projects.GetProjectBudgetTestCases@3b35a229]" started-at="2025-02-04T11:55:23 IST" name="verifyGetProjectBudgetWithInvalidProjectIds" finished-at="2025-02-04T11:55:23 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBudgetWithInvalidProjectIds -->
+        <test-method signature="verifyGetProjectBudgetWithInvalidAccessToken()[pri:3, instance:testcases.projects.GetProjectBudgetTestCases@3b35a229]" started-at="2025-02-04T11:55:23 IST" name="verifyGetProjectBudgetWithInvalidAccessToken" finished-at="2025-02-04T11:55:23 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBudgetWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectBudgetWithInvalidTenantId()[pri:4, instance:testcases.projects.GetProjectBudgetTestCases@3b35a229]" started-at="2025-02-04T11:55:23 IST" name="verifyGetProjectBudgetWithInvalidTenantId" finished-at="2025-02-04T11:55:23 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBudgetWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectBudgetWithoutAccessToken()[pri:5, instance:testcases.projects.GetProjectBudgetTestCases@3b35a229]" started-at="2025-02-04T11:55:23 IST" name="verifyGetProjectBudgetWithoutAccessToken" finished-at="2025-02-04T11:55:23 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBudgetWithoutAccessToken -->
+      </class> <!-- testcases.projects.GetProjectBudgetTestCases -->
+      <class name="testcases.projects.GetProjectPriorityTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetProjectPriorityTestCases@f58853c]" started-at="2025-02-04T11:55:19 IST" name="setupTestData" finished-at="2025-02-04T11:55:19 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectPriorities()[pri:1, instance:testcases.projects.GetProjectPriorityTestCases@f58853c]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectPriorities" finished-at="2025-02-04T11:55:19 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectPriorities -->
+        <test-method signature="verifyGetProjectPrioritiesWithInvalidAccessToken()[pri:2, instance:testcases.projects.GetProjectPriorityTestCases@f58853c]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectPrioritiesWithInvalidAccessToken" finished-at="2025-02-04T11:55:19 IST" duration-ms="80" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid access token did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid access token did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.GetProjectPriorityTestCases.verifyGetProjectPrioritiesWithInvalidAccessToken(GetProjectPriorityTestCases.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectPrioritiesWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectPrioritiesWithInvalidTenantId()[pri:3, instance:testcases.projects.GetProjectPriorityTestCases@f58853c]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectPrioritiesWithInvalidTenantId" finished-at="2025-02-04T11:55:19 IST" duration-ms="55" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid tenant id did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid tenant id did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.GetProjectPriorityTestCases.verifyGetProjectPrioritiesWithInvalidTenantId(GetProjectPriorityTestCases.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectPrioritiesWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectPrioritiesWithoutAccessToken()[pri:4, instance:testcases.projects.GetProjectPriorityTestCases@f58853c]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectPrioritiesWithoutAccessToken" finished-at="2025-02-04T11:55:19 IST" duration-ms="85" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure without access token did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure without access token did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.GetProjectPriorityTestCases.verifyGetProjectPrioritiesWithoutAccessToken(GetProjectPriorityTestCases.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectPrioritiesWithoutAccessToken -->
+      </class> <!-- testcases.projects.GetProjectPriorityTestCases -->
+      <class name="testcases.LoginTestCases">
+        <test-method signature="verifySuccessfulLogin()[pri:1, instance:testcases.LoginTestCases@58e1d9d]" started-at="2025-02-04T11:55:11 IST" name="verifySuccessfulLogin" finished-at="2025-02-04T11:55:16 IST" duration-ms="4285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogin -->
+        <test-method signature="verifyLoginWithIncorrectPassword()[pri:2, instance:testcases.LoginTestCases@58e1d9d]" started-at="2025-02-04T11:55:16 IST" name="verifyLoginWithIncorrectPassword" finished-at="2025-02-04T11:55:16 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithIncorrectPassword -->
+        <test-method signature="verifyLoginWithIncorrectEmail()[pri:3, instance:testcases.LoginTestCases@58e1d9d]" started-at="2025-02-04T11:55:16 IST" name="verifyLoginWithIncorrectEmail" finished-at="2025-02-04T11:55:16 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithIncorrectEmail -->
+        <test-method signature="verifyLoginWithEmptyCredentials()[pri:4, instance:testcases.LoginTestCases@58e1d9d]" started-at="2025-02-04T11:55:16 IST" name="verifyLoginWithEmptyCredentials" finished-at="2025-02-04T11:55:16 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithEmptyCredentials -->
+      </class> <!-- testcases.LoginTestCases -->
+      <class name="testcases.projects.CreateProjectTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:16 IST" name="setupTestData" finished-at="2025-02-04T11:55:16 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyCreateProject()[pri:1, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:16 IST" name="verifyCreateProject" finished-at="2025-02-04T11:55:18 IST" duration-ms="1319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProject -->
+        <test-method signature="verifyCreateProjectWithEmptyProjectName()[pri:2, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:18 IST" name="verifyCreateProjectWithEmptyProjectName" finished-at="2025-02-04T11:55:18 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectWithEmptyProjectName -->
+        <test-method signature="verifyCreateProjectWithInvalidStartDate()[pri:3, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:18 IST" name="verifyCreateProjectWithInvalidStartDate" finished-at="2025-02-04T11:55:18 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectWithInvalidStartDate -->
+        <test-method signature="verifyCreateProjectWithEndDateBeforeStartDate()[pri:4, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:18 IST" name="verifyCreateProjectWithEndDateBeforeStartDate" finished-at="2025-02-04T11:55:18 IST" duration-ms="141" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project should not be created with end date before start date did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project should not be created with end date before start date did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.CreateProjectTestCases.verifyCreateProjectWithEndDateBeforeStartDate(CreateProjectTestCases.java:138)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectWithEndDateBeforeStartDate -->
+        <test-method signature="verifyCreateProjectWithoutAuthorizationToken()[pri:5, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:18 IST" name="verifyCreateProjectWithoutAuthorizationToken" finished-at="2025-02-04T11:55:18 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectWithoutAuthorizationToken -->
+        <test-method signature="verifyCreateProjectWithInvalidProjectPriority()[pri:6, instance:testcases.projects.CreateProjectTestCases@6e2aa843]" started-at="2025-02-04T11:55:18 IST" name="verifyCreateProjectWithInvalidProjectPriority" finished-at="2025-02-04T11:55:18 IST" duration-ms="150" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project should not be created with invalid project priority did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project should not be created with invalid project priority did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.CreateProjectTestCases.verifyCreateProjectWithInvalidProjectPriority(CreateProjectTestCases.java:190)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectWithInvalidProjectPriority -->
+      </class> <!-- testcases.projects.CreateProjectTestCases -->
+      <class name="testcases.projects.UpdateProjectManagerTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:26 IST" name="setupTestData" finished-at="2025-02-04T11:55:26 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyUpdateProjectManager()[pri:1, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:26 IST" name="verifyUpdateProjectManager" finished-at="2025-02-04T11:55:26 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectManager -->
+        <test-method signature="verifyUpdateProjectManagerWithInvalidProjectId()[pri:2, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:26 IST" name="verifyUpdateProjectManagerWithInvalidProjectId" finished-at="2025-02-04T11:55:27 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectManagerWithInvalidProjectId -->
+        <test-method signature="verifyUpdateProjectManagerWithInvalidAccessToken()[pri:3, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:27 IST" name="verifyUpdateProjectManagerWithInvalidAccessToken" finished-at="2025-02-04T11:55:27 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectManagerWithInvalidAccessToken -->
+        <test-method signature="verifyUpdateProjectManagerWithInvalidManagerId()[pri:3, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:27 IST" name="verifyUpdateProjectManagerWithInvalidManagerId" finished-at="2025-02-04T11:55:27 IST" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectManagerWithInvalidManagerId -->
+        <test-method signature="verifyUpdateProjectManagerWithInvalidTenantId()[pri:4, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:28 IST" name="verifyUpdateProjectManagerWithInvalidTenantId" finished-at="2025-02-04T11:55:28 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectManagerWithInvalidTenantId -->
+        <test-method signature="verifyUpdateProjectManagerWithoutAccessToken()[pri:5, instance:testcases.projects.UpdateProjectManagerTestCases@565f390]" started-at="2025-02-04T11:55:28 IST" name="verifyUpdateProjectManagerWithoutAccessToken" finished-at="2025-02-04T11:55:28 IST" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateProjectManagerWithoutAccessToken -->
+      </class> <!-- testcases.projects.UpdateProjectManagerTestCases -->
+      <class name="testcases.projects.CreateProjectMemberTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="setupTestData" finished-at="2025-02-04T11:55:26 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyCreateProjectMember()[pri:1, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="verifyCreateProjectMember" finished-at="2025-02-04T11:55:26 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectMember -->
+        <test-method signature="verifyCreateProjectMemberWithInvalidResourceId()[pri:2, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="verifyCreateProjectMemberWithInvalidResourceId" finished-at="2025-02-04T11:55:26 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectMemberWithInvalidResourceId -->
+        <test-method signature="verifyCreateProjectMemberWithInvalidProjectIds()[pri:3, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="verifyCreateProjectMemberWithInvalidProjectIds" finished-at="2025-02-04T11:55:26 IST" duration-ms="109" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid project ID: 12345 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid project ID: 12345 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.CreateProjectMemberTestCases.verifyCreateProjectMemberWithInvalidProjectIds(CreateProjectMemberTestCases.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectMemberWithInvalidProjectIds -->
+        <test-method signature="verifyCreateProjectMemberWithInvalidAccessToken()[pri:4, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="verifyCreateProjectMemberWithInvalidAccessToken" finished-at="2025-02-04T11:55:26 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectMemberWithInvalidAccessToken -->
+        <test-method signature="verifyCreateProjectMemberWithInvalidTenantId()[pri:5, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="verifyCreateProjectMemberWithInvalidTenantId" finished-at="2025-02-04T11:55:26 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectMemberWithInvalidTenantId -->
+        <test-method signature="verifyCreateProjectMemberWithoutAccessToken()[pri:6, instance:testcases.projects.CreateProjectMemberTestCases@13d73f29]" started-at="2025-02-04T11:55:26 IST" name="verifyCreateProjectMemberWithoutAccessToken" finished-at="2025-02-04T11:55:26 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateProjectMemberWithoutAccessToken -->
+      </class> <!-- testcases.projects.CreateProjectMemberTestCases -->
+      <class name="testcases.projects.DeleteProjectBudgetTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.DeleteProjectBudgetTestCases@1e16c0aa]" started-at="2025-02-04T11:55:25 IST" name="setupTestData" finished-at="2025-02-04T11:55:25 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyDeleteProjectBudget()[pri:1, instance:testcases.projects.DeleteProjectBudgetTestCases@1e16c0aa]" started-at="2025-02-04T11:55:25 IST" name="verifyDeleteProjectBudget" finished-at="2025-02-04T11:55:25 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectBudget -->
+        <test-method signature="verifyDeleteProjectBudgetWithInvalidProjectIds()[pri:2, instance:testcases.projects.DeleteProjectBudgetTestCases@1e16c0aa]" started-at="2025-02-04T11:55:25 IST" name="verifyDeleteProjectBudgetWithInvalidProjectIds" finished-at="2025-02-04T11:55:25 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectBudgetWithInvalidProjectIds -->
+        <test-method signature="verifyDeleteProjectBudgetWithInvalidAccessToken()[pri:3, instance:testcases.projects.DeleteProjectBudgetTestCases@1e16c0aa]" started-at="2025-02-04T11:55:25 IST" name="verifyDeleteProjectBudgetWithInvalidAccessToken" finished-at="2025-02-04T11:55:25 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectBudgetWithInvalidAccessToken -->
+        <test-method signature="verifyDeleteProjectBudgetWithInvalidTenantId()[pri:4, instance:testcases.projects.DeleteProjectBudgetTestCases@1e16c0aa]" started-at="2025-02-04T11:55:25 IST" name="verifyDeleteProjectBudgetWithInvalidTenantId" finished-at="2025-02-04T11:55:26 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectBudgetWithInvalidTenantId -->
+        <test-method signature="verifyDeleteProjectBudgetWithoutAccessToken()[pri:5, instance:testcases.projects.DeleteProjectBudgetTestCases@1e16c0aa]" started-at="2025-02-04T11:55:26 IST" name="verifyDeleteProjectBudgetWithoutAccessToken" finished-at="2025-02-04T11:55:26 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectBudgetWithoutAccessToken -->
+      </class> <!-- testcases.projects.DeleteProjectBudgetTestCases -->
+      <class name="testcases.projects.GetProjectCardViewTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetProjectCardViewTestCases@6f36c2f0]" started-at="2025-02-04T11:55:18 IST" name="setupTestData" finished-at="2025-02-04T11:55:18 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectCardView()[pri:1, instance:testcases.projects.GetProjectCardViewTestCases@6f36c2f0]" started-at="2025-02-04T11:55:18 IST" name="verifyGetProjectCardView" finished-at="2025-02-04T11:55:19 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectCardView -->
+        <test-method signature="verifyGetProjectCardViewWithInvalidToken()[pri:2, instance:testcases.projects.GetProjectCardViewTestCases@6f36c2f0]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectCardViewWithInvalidToken" finished-at="2025-02-04T11:55:19 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectCardViewWithInvalidToken -->
+        <test-method signature="verifyGetProjectCardViewWithoutTenantId()[pri:3, instance:testcases.projects.GetProjectCardViewTestCases@6f36c2f0]" started-at="2025-02-04T11:55:19 IST" name="verifyGetProjectCardViewWithoutTenantId" finished-at="2025-02-04T11:55:19 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectCardViewWithoutTenantId -->
+      </class> <!-- testcases.projects.GetProjectCardViewTestCases -->
+      <class name="testcases.projectboards.GetProjectBoardTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projectboards.GetProjectBoardTestCases@311bf055]" started-at="2025-02-04T11:55:32 IST" name="setupTestData" finished-at="2025-02-04T11:55:32 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectBoard()[pri:1, instance:testcases.projectboards.GetProjectBoardTestCases@311bf055]" started-at="2025-02-04T11:55:32 IST" name="verifyGetProjectBoard" finished-at="2025-02-04T11:55:32 IST" duration-ms="314" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to retrieve project board expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to retrieve project board expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at testcases.projectboards.GetProjectBoardTestCases.verifyGetProjectBoard(GetProjectBoardTestCases.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoard -->
+        <test-method signature="verifyGetProjectBoardWithInvalidAccessToken()[pri:2, instance:testcases.projectboards.GetProjectBoardTestCases@311bf055]" started-at="2025-02-04T11:55:32 IST" name="verifyGetProjectBoardWithInvalidAccessToken" finished-at="2025-02-04T11:55:32 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectBoardWithInvalidTenantId()[pri:3, instance:testcases.projectboards.GetProjectBoardTestCases@311bf055]" started-at="2025-02-04T11:55:32 IST" name="verifyGetProjectBoardWithInvalidTenantId" finished-at="2025-02-04T11:55:32 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectBoardWithoutAccessToken()[pri:4, instance:testcases.projectboards.GetProjectBoardTestCases@311bf055]" started-at="2025-02-04T11:55:32 IST" name="verifyGetProjectBoardWithoutAccessToken" finished-at="2025-02-04T11:55:32 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectBoardWithoutAccessToken -->
+      </class> <!-- testcases.projectboards.GetProjectBoardTestCases -->
+      <class name="testcases.projects.DeleteProjectClientTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.DeleteProjectClientTestCases@6d5620ce]" started-at="2025-02-04T11:55:31 IST" name="setupTestData" finished-at="2025-02-04T11:55:31 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyDeleteProjectClient()[pri:1, instance:testcases.projects.DeleteProjectClientTestCases@6d5620ce]" started-at="2025-02-04T11:55:31 IST" name="verifyDeleteProjectClient" finished-at="2025-02-04T11:55:31 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectClient -->
+        <test-method signature="verifyDeleteProjectClientWithInvalidClientIds()[pri:2, instance:testcases.projects.DeleteProjectClientTestCases@6d5620ce]" started-at="2025-02-04T11:55:31 IST" name="verifyDeleteProjectClientWithInvalidClientIds" finished-at="2025-02-04T11:55:32 IST" duration-ms="34" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected failure with invalid client ID: 12345 did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected failure with invalid client ID: 12345 did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at testcases.projects.DeleteProjectClientTestCases.verifyDeleteProjectClientWithInvalidClientIds(DeleteProjectClientTestCases.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectClientWithInvalidClientIds -->
+        <test-method signature="verifyDeleteProjectClientWithInvalidAccessToken()[pri:3, instance:testcases.projects.DeleteProjectClientTestCases@6d5620ce]" started-at="2025-02-04T11:55:32 IST" name="verifyDeleteProjectClientWithInvalidAccessToken" finished-at="2025-02-04T11:55:32 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectClientWithInvalidAccessToken -->
+        <test-method signature="verifyDeleteProjectClientWithInvalidTenantId()[pri:4, instance:testcases.projects.DeleteProjectClientTestCases@6d5620ce]" started-at="2025-02-04T11:55:32 IST" name="verifyDeleteProjectClientWithInvalidTenantId" finished-at="2025-02-04T11:55:32 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectClientWithInvalidTenantId -->
+        <test-method signature="verifyDeleteProjectClientWithoutAccessToken()[pri:5, instance:testcases.projects.DeleteProjectClientTestCases@6d5620ce]" started-at="2025-02-04T11:55:32 IST" name="verifyDeleteProjectClientWithoutAccessToken" finished-at="2025-02-04T11:55:32 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteProjectClientWithoutAccessToken -->
+      </class> <!-- testcases.projects.DeleteProjectClientTestCases -->
+      <class name="testcases.projects.GetProjectManagerTestCases">
+        <test-method is-config="true" signature="setupTestData()[pri:0, instance:testcases.projects.GetProjectManagerTestCases@2f67a4d3]" started-at="2025-02-04T11:55:29 IST" name="setupTestData" finished-at="2025-02-04T11:55:29 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestData -->
+        <test-method signature="verifyGetProjectManager()[pri:1, instance:testcases.projects.GetProjectManagerTestCases@2f67a4d3]" started-at="2025-02-04T11:55:29 IST" name="verifyGetProjectManager" finished-at="2025-02-04T11:55:29 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectManager -->
+        <test-method signature="verifyGetProjectManagerWithInvalidProjectIds()[pri:2, instance:testcases.projects.GetProjectManagerTestCases@2f67a4d3]" started-at="2025-02-04T11:55:29 IST" name="verifyGetProjectManagerWithInvalidProjectIds" finished-at="2025-02-04T11:55:29 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectManagerWithInvalidProjectIds -->
+        <test-method signature="verifyGetProjectManagerWithInvalidAccessToken()[pri:3, instance:testcases.projects.GetProjectManagerTestCases@2f67a4d3]" started-at="2025-02-04T11:55:29 IST" name="verifyGetProjectManagerWithInvalidAccessToken" finished-at="2025-02-04T11:55:29 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectManagerWithInvalidAccessToken -->
+        <test-method signature="verifyGetProjectManagerWithInvalidTenantId()[pri:4, instance:testcases.projects.GetProjectManagerTestCases@2f67a4d3]" started-at="2025-02-04T11:55:29 IST" name="verifyGetProjectManagerWithInvalidTenantId" finished-at="2025-02-04T11:55:29 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectManagerWithInvalidTenantId -->
+        <test-method signature="verifyGetProjectManagerWithoutAccessToken()[pri:5, instance:testcases.projects.GetProjectManagerTestCases@2f67a4d3]" started-at="2025-02-04T11:55:29 IST" name="verifyGetProjectManagerWithoutAccessToken" finished-at="2025-02-04T11:55:29 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetProjectManagerWithoutAccessToken -->
+      </class> <!-- testcases.projects.GetProjectManagerTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
