@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.registereduser.PreRegisterTestCases">
+      <class name="testcases.projects.CreateProjectMemberTestCases">
         <methods>
-          <include name="preRegister"/>
+          <include name="verifyCreateProjectMemberWithInvalidTenantId"/>
+          <include name="verifyCreateProjectMemberWithInvalidProjectIds"/>
           <include name="setupTestData"/>
+          <include name="verifyCreateProjectMemberWithInvalidAccessToken"/>
+          <include name="verifyCreateProjectMember"/>
+          <include name="verifyCreateProjectMemberWithoutAccessToken"/>
+          <include name="verifyCreateProjectMemberWithInvalidResourceId"/>
         </methods>
-      </class> <!-- testcases.registereduser.PreRegisterTestCases -->
+      </class> <!-- testcases.projects.CreateProjectMemberTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

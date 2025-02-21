@@ -1,92 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.ExtentListenerClass"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.projects.UpdateProjectBudgetTestCases">
-        <methods>
-          <include name="verifyUpdateProjectBudgetWithInvalidCurrencyCode"/>
-          <include name="verifyUpdateProjectBudgetWithNegativeAndStringValues"/>
-          <include name="setupTestData"/>
-          <include name="verifyUpdateProjectBudgetWithInvalidToleranceValues"/>
-        </methods>
-      </class> <!-- testcases.projects.UpdateProjectBudgetTestCases -->
-      <class name="testcases.projects.DeleteProjectClientTestCases">
-        <methods>
-          <include name="setupTestData"/>
-          <include name="verifyDeleteProjectClientWithInvalidClientIds"/>
-        </methods>
-      </class> <!-- testcases.projects.DeleteProjectClientTestCases -->
       <class name="testcases.projects.CreateProjectMemberTestCases">
         <methods>
+          <include name="verifyCreateProjectMemberWithInvalidTenantId"/>
           <include name="verifyCreateProjectMemberWithInvalidProjectIds"/>
           <include name="setupTestData"/>
+          <include name="verifyCreateProjectMemberWithInvalidAccessToken"/>
+          <include name="verifyCreateProjectMember"/>
+          <include name="verifyCreateProjectMemberWithoutAccessToken"/>
+          <include name="verifyCreateProjectMemberWithInvalidResourceId"/>
         </methods>
       </class> <!-- testcases.projects.CreateProjectMemberTestCases -->
-      <class name="testcases.projects.UpdateProjectClientTestCases">
-        <methods>
-          <include name="verifyUpdateProjectClientWithInvalidProjectIdABC"/>
-          <include name="verifyUpdateProjectClientWithInvalidProjectId"/>
-          <include name="setupTestData"/>
-          <include name="verifyUpdateProjectClientWithInvalidClientIds"/>
-          <include name="verifyUpdateProjectClientWithNegativeProjectId"/>
-        </methods>
-      </class> <!-- testcases.projects.UpdateProjectClientTestCases -->
-      <class name="testcases.projects.DeleteProjectMemberTestCases">
-        <methods>
-          <include name="verifyDeleteProjectMemberWithInvalidProjectId"/>
-          <include name="setupTestData"/>
-          <include name="verifyDeleteProjectMemberWithInvalidMemberId"/>
-        </methods>
-      </class> <!-- testcases.projects.DeleteProjectMemberTestCases -->
-      <class name="testcases.projects.GetProjectClientTestCases">
-        <methods>
-          <include name="setupTestData"/>
-          <include name="verifyGetProjectClientWithInvalidProjectId"/>
-        </methods>
-      </class> <!-- testcases.projects.GetProjectClientTestCases -->
-      <class name="testcases.projects.GetAllProjectMemberTestCases">
-        <methods>
-          <include name="setupTestData"/>
-          <include name="verifyGetAllProjectMembersWithInvalidProjectId"/>
-        </methods>
-      </class> <!-- testcases.projects.GetAllProjectMemberTestCases -->
-      <class name="testcases.projects.GetProjectPriorityTestCases">
-        <methods>
-          <include name="setupTestData"/>
-          <include name="verifyGetProjectPrioritiesWithoutAccessToken"/>
-          <include name="verifyGetProjectPrioritiesWithInvalidAccessToken"/>
-          <include name="verifyGetProjectPrioritiesWithInvalidTenantId"/>
-        </methods>
-      </class> <!-- testcases.projects.GetProjectPriorityTestCases -->
-      <class name="testcases.projectboards.GetProjectBoardTestCases">
-        <methods>
-          <include name="setupTestData"/>
-          <include name="verifyGetProjectBoard"/>
-        </methods>
-      </class> <!-- testcases.projectboards.GetProjectBoardTestCases -->
-      <class name="testcases.projects.CreateProjectTestCases">
-        <methods>
-          <include name="setupTestData"/>
-          <include name="verifyCreateProjectWithInvalidProjectPriority"/>
-          <include name="verifyCreateProjectWithEndDateBeforeStartDate"/>
-        </methods>
-      </class> <!-- testcases.projects.CreateProjectTestCases -->
-      <class name="testcases.projects.MultiUpdateProjectMembersTestCases">
-        <methods>
-          <include name="verifyMultiUpdateProjectMembersWithInvalidProjectId"/>
-          <include name="setupTestData"/>
-        </methods>
-      </class> <!-- testcases.projects.MultiUpdateProjectMembersTestCases -->
-      <class name="testcases.projects.DeleteProjectByIdTestCases">
-        <methods>
-          <include name="verifyDeleteProjectById"/>
-          <include name="setupTestData"/>
-        </methods>
-      </class> <!-- testcases.projects.DeleteProjectByIdTestCases -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
